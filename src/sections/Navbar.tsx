@@ -1,6 +1,8 @@
 import Image from "next/image";
 import logoImage from '@/assets/images/logo.svg'
 import Button from "@/components/button";
+import designExampleImage from "@/assets/images/design-example-1.png";
+import designExampleImage2 from "@/assets/images/design-example-2.png";
 
 const navLinks = [
     { label: "Home", href: "#" },
@@ -10,9 +12,15 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-    return <section className="py-4 lg:py-8">
+    return <section className="py-8 overflow-x-clip">
         <div className="container max-w-5xl">
-            <div className="grid grid-cols-3 border border-white/15 rounded-full p-2 md:pr-2 px-4 items-center">
+            <div className="absolute -left-32 top-32">
+                <Image 
+                src={designExampleImage} 
+                alt="Example image 1"
+                />
+            </div>
+            <div className="grid grid-cols-2 lg:grid-cols-3 border border-white/15 rounded-full p-2 md:pr-2 px-4 items-center">
                 <div>
                     <Image src={logoImage} alt="Layers logo" className="h-12 w-auto ml-2" />
                 </div>
@@ -43,6 +51,12 @@ export default function Navbar() {
                     <Button variant="secondary" className="hidden md:inline-flex items-center itespace-nowrap">Log In</Button>
                     <Button variant="primary" className="hidden md:inline-flex items-center itespace-nowrap">Sign Up</Button>
                 </div>
+            </div>
+            <div className="absolute -right-64 top-64">
+                <Image 
+                src={designExampleImage2} 
+                alt="Example image 2"
+                />
             </div>
         </div>
     </section>

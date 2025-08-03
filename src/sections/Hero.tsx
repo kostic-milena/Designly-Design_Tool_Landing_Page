@@ -10,9 +10,9 @@ export default function Hero() {
                 </div>
             </div>
             <h1 className="text-6xl font-medium text-center mt-6">Design Without Limits.</h1>
-            <p className="text-center text-xl text-white/50 mt-8">Designly unifies your team on a single real‑time canvas. Brainstorm ideas, create pixel‑perfect mockups, and hand off designs to developers — all without switching tools or losing momentum.</p>
+            <p className="text-center text-xl max-w-3xl m-auto text-white/50 mt-8">Designly unifies your team on a single real‑time canvas. Brainstorm ideas, create pixel‑perfect mockups, and hand off designs to developers — all without switching tools or losing momentum.</p>
             <form 
-            className="flex justify-between border border-white/15 rounded-full p-2 mt-8">
+            className="flex justify-between max-w-xl mx-auto border border-white/15 rounded-full p-2 mt-8">
                 <input 
                     type="email" 
                     name="email" 
