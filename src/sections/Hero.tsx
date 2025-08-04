@@ -1,8 +1,30 @@
 
 import Button from "@/components/button";
+import Image from "next/image";
+import designExampleImage from "@/assets/images/design-example-1.png";
+import designExampleImage2 from "@/assets/images/design-example-2.png";
+import Pointer from "@/components/Pointer";
 
 export default function Hero() {
     return <section className="py-24">
+        <div className="absolute -left-32 top-32 hidden lg:block">
+            <Image 
+            src={designExampleImage} 
+            alt="Example image 1"
+            />
+        </div>
+        <div className="absolute -right-64 top-64 hidden lg:block">
+            <Image 
+            src={designExampleImage2} 
+            alt="Example image 2"
+            />
+        </div>
+        <div className="absolute left-40 top-80 hidden lg:block">
+            <Pointer name="Sarah" color="red" />
+        </div>
+        <div className="absolute right-40 top-40 hidden lg:block">
+            <Pointer name="Noah" />
+        </div>
         <div className="container">
             <div className="flex justify-center">
                 <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold ">

@@ -6,6 +6,7 @@ import outsideLogo from "@/assets/images/outside.svg";
 import apexLogo from "@/assets/images/apex.svg";
 import celestialLogo from "@/assets/images/celestial.svg";
 import twiceLogo from "@/assets/images/twice.svg";
+import { section } from "framer-motion/client";
 
 const logos = [
     { name: "Quantum", image: quantumLogo },
@@ -19,5 +20,9 @@ const logos = [
 ];
 
 export default function LogoTicker() {
-    return <div>Logo Ticker</div>;
+    return <section>
+        <div>
+            
+        </div>
+    </section>;
 }
