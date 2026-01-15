@@ -24,6 +24,17 @@ const config: Config = {
             md: "768px",
             lg: "1200px",
         },
+        extend: {
+            animation: {
+                "logo-ticker": "logo-ticker 30s linear infinite",
+            },
+            keyframes: {
+                "logo-ticker": {
+                "0%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(-50%)" },
+                },
+            },
+        },
     },
     plugins: [],
 };

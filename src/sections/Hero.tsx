@@ -1,23 +1,23 @@
 
 import Button from "@/components/button";
 import Image from "next/image";
-import designExampleImage from "@/assets/images/design-example-1.png";
-import designExampleImage2 from "@/assets/images/design-example-2.png";
+// import designExampleImage from "@/assets/images/design-example-1.png";
+// import designExampleImage2 from "@/assets/images/design-example-2.png";
 import Pointer from "@/components/Pointer";
 
 export default function Hero() {
     return <section className="py-24">
         <div className="absolute -left-32 top-32 hidden lg:block">
-            <Image 
+            {/* <Image 
             src={designExampleImage} 
             alt="Example image 1"
-            />
+            /> */}
         </div>
         <div className="absolute -right-64 top-64 hidden lg:block">
-            <Image 
+            {/* <Image 
             src={designExampleImage2} 
             alt="Example image 2"
-            />
+            /> */}
         </div>
         <div className="absolute left-40 top-80 hidden lg:block">
             <Pointer name="Sarah" color="red" />
