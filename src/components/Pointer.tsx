@@ -10,7 +10,7 @@ export default function Pointer (props: {
         </svg>
         <div className="absolute top-full left-full">
             <div 
-            className={twMerge("inline-flex rounded-full font-bold text-sm bg-blue-500 px-2 rounded-tl-none", color === "red" && "bg-red-500")}
+            className={twMerge("inline-flex rounded-full font-bold text-sm bg-indigo-400 px-2 rounded-tl-none", color === "red" && "bg-pink-400")}
             >{name}</div>
         </div>
         </div>
